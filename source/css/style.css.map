@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AACA;EACE,yBAAA;ACAF","file":"style.css","sourcesContent":["// Начните писать стили здесь\nbody {\n  background-color: #00FFFF;\n}\n","body {\n  background-color: #00FFFF;\n}"]}
