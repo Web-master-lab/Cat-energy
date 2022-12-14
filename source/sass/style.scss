@@ -4,6 +4,7 @@
 
 @use "fonts.scss";
 @use "visually-hidden.scss";
+@use "variable.scss";
 
 // Blocks
 
@@ -23,3 +24,12 @@
 @use "blocks/social.scss";
 @use "blocks/copyright.scss";
 @use "blocks/page-main.scss";
+@use "blocks/card.scss";
+@use "blocks/show-more.scss";
+@use "blocks/catalog-additional.scss";
+@use "blocks/card-row.scss";
+@use "blocks/present.scss";
+@use "blocks/field.scss";
+@use "blocks/field-group.scss";
+@use "blocks/control.scss";
+@use "blocks/form.scss";

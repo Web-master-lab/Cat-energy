@@ -1,0 +1,27 @@
+.card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.card__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+}
+
+.card__title {
+  font-weight: 400;
+}
+
+.card__list {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.card__button {
+  display: block;
+}
