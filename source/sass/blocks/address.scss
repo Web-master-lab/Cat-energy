@@ -1,0 +1,24 @@
+.address {
+  padding-top: 26px;
+}
+
+.address__title {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.address__geo {
+  margin: 0;
+  margin-bottom: 26px;
+
+  line-height: 20px;
+  color: #444444;
+}
+
+.address__image {
+  display: block;
+}

@@ -1,0 +1,25 @@
+.process {
+  padding-bottom: 50px;
+}
+
+.process__list {
+  padding: 0;
+  margin: 0;
+}
+
+.process__item {
+  margin-bottom: 20px;
+
+  color: #444444;
+
+  list-style-type: none;
+}
+
+.process__item:last-child {
+  margin-bottom: 0;
+}
+
+.process__title {
+  margin: 0;
+  margin-bottom: 40px;
+}

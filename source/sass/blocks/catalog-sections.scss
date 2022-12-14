@@ -1,0 +1,39 @@
+.catalog-sections {
+  padding-bottom: 20px;
+}
+
+.catalog-sections__card {
+  padding: 24px 20px 22px;
+  margin-bottom: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.catalog-sections__card:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-sections__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-sections__text {
+  margin: 0;
+  margin-bottom: 42px;
+
+  color: #444444;
+}
+
+.catalog-sections__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}

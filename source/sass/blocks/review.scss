@@ -1,0 +1,45 @@
+.review {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  background-color: #eaeaea;
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: #444444;
+}
+
+.review__list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.review__term {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.review__definition {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.review__cost {
+  margin: 0;
+  margin-bottom: 40px;
+
+  line-height: 20px;
+  text-transform: uppercase;
+}

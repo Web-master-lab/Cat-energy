@@ -1,4 +1,25 @@
 // Начните писать стили здесь
-body {
-  background-color: #00ffff;
-}
+
+// Global
+
+@use "fonts.scss";
+@use "visually-hidden.scss";
+
+// Blocks
+
+@use "blocks/page.scss";
+@use "blocks/page-header.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/promo.scss";
+@use "blocks/button.scss";
+@use "blocks/catalog-sections.scss";
+@use "blocks/process.scss";
+@use "blocks/section-title";
+@use "blocks/review.scss";
+@use "blocks/switcher.scss";
+@use "blocks/switch-number.scss";
+@use "blocks/address.scss";
+@use "blocks/page-footer.scss";
+@use "blocks/social.scss";
+@use "blocks/copyright.scss";
+@use "blocks/page-main.scss";
