@@ -3,18 +3,33 @@
   padding-bottom: 40px;
 
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding-top: 43px;
+    padding-bottom: 55px;
+  }
 }
 
 .review__title {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .review__text {
   margin: 0;
   margin-bottom: 20px;
 
+  font-family: $additional-font;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .review__list {
@@ -23,6 +38,7 @@
 }
 
 .review__term {
+  font-family: $additional-font;
   font-size: 12px;
   line-height: 12px;
   color: #444444;

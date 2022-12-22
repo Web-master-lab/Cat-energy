@@ -1,13 +1,17 @@
 .promo {
   position: relative;
 
-  padding: 27px 20px 20px;
-
   color: #ffffff;
 
   background-image: url("../../img/promo-background-mobile.png");
-  background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/promo-background-desktop.png");
+  }
 }
 
 .promo::before {
@@ -15,41 +19,74 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 
   width: 320px;
   height: 302px;
 
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.promo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 27px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 27px 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 30px 110px 200px;
+  }
 }
 
 .promo__button {
-  position: relative;
-
   display: block;
+  padding: 10px 0;
 
-  text-decoration: none;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 17px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__title {
-  position: relative;
-
   margin: 0;
   margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+  }
 }
 
 .promo__slogan {
-  position: relative;
-
   line-height: 14px;
   text-transform: uppercase;
-}
+  text-align: center;
 
-.promo__image {
-  position: relative;
-
-  margin-bottom: 3px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+  }
 }

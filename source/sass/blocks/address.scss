@@ -1,5 +1,33 @@
 .address {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
+}
+
+.address__content {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 0 20px 26px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 56px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    padding: 56px 80px;
+  }
 }
 
 .address__title {
@@ -9,14 +37,23 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__geo {
   margin: 0;
-  margin-bottom: 26px;
 
+  font-family: $additional-font;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
 }
 
 .address__image {

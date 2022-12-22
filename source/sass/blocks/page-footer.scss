@@ -1,4 +1,29 @@
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   padding: 39px 20px 22px;
+
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 768px;
+    justify-content: space-between;
+    padding: 58px 30px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 58px 110px;
+  }
+}
+
+.page-footer__logo {
+  display: flex;
+}
+
+.page-footer__logo-text {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }

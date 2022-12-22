@@ -1,7 +1,14 @@
 .page__body {
   margin: 0;
 
-  font-family: "Oswald", sans-serif;
+  min-width: 320px;
+
+  font-family: $main-font;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
