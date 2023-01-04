@@ -1,4 +1,9 @@
 .copyright {
+  display: flex;
+  padding-top: 22px;
+  align-items: center;
+  justify-content: space-between;
+
   font-family: $additional-font;
   font-size: 16px;
   color: #444444;

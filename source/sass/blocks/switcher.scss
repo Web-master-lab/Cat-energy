@@ -1,0 +1,43 @@
+.switcher {
+  position: relative;
+
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+.switcher__before {
+  padding: 0;
+  padding-right: 122px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 43px);
+    top: calc(50% - 7px);
+
+    width: 86px;
+    height: 14px;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 37px);
+    top: calc(50% - 3px);
+
+    width: 36px;
+    height: 6px;
+
+    background-color: #68b738;
+    border-radius: 6px;
+  }
+}
+
+.switcher__after {
+  padding: 0;
+}

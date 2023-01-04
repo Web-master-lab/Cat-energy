@@ -1,3 +1,22 @@
+.field {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
+}
+
+.field--comment {
+  display: block;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .field__label {
   font-size: 16px;
   text-transform: uppercase;
@@ -8,4 +27,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.field__input--comment {
+  width: 100%;
 }

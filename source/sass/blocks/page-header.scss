@@ -1,10 +1,9 @@
 .page-header {
-  width: 320px;
+  position: relative;
+
   margin: 0 auto;
-  padding: 10px 20px 18px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     padding: 24px 30px 0;
   }
 

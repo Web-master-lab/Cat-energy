@@ -1,32 +1,28 @@
 .address {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 26px;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     padding: 0 110px;
   }
 }
 
 .address__content {
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 26px 20px;
   justify-content: space-between;
-  width: 320px;
-  padding: 0 20px 26px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     padding: 56px 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
     padding: 56px 80px;
+
+    background-color: #ffffff;
   }
 }
 
@@ -58,6 +54,7 @@
 
 .address__image {
   display: block;
+  margin: 0 auto;
 }
 
 .address--inner {

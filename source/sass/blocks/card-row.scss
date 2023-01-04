@@ -1,14 +1,88 @@
+.card-row {
+  padding: 13px 0 19px;
+
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 17px;
+
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.card-row:last-of-type {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.card-row__list {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 288px;
+    justify-content: space-between;
+    margin-right: 38px;
+  }
+}
+
 .card-row__definition {
+  margin: 0;
+
   font-family: $additional-font;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card-row__title {
+  margin: 0;
+  margin-bottom: 13px;
+
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    margin-bottom: 0;
+    margin-right: 74px;
+  }
+}
+
+.card-row__button {
+  display: block;
+  padding: 10px 0;
+
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 92px;
+  }
 }

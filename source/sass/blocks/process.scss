@@ -22,10 +22,36 @@
   }
 }
 
+.process__list .process__item:nth-child(1)::before {
+  background-image: url("../../img/icons/process-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process__list .process__item:nth-child(2)::before {
+  background-image: url("../../img/icons/process-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process__list .process__item:nth-child(3)::before {
+  background-image: url("../../img/icons/process-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process__list .process__item:nth-child(4)::before {
+  background-image: url("../../img/icons/process-4.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .process__item {
   position: relative;
+
+  min-height: 54px;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   font-family: $additional-font;
   color: #444444;

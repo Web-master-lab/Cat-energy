@@ -1,3 +1,47 @@
+.social {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 0;
+  align-items: center;
+}
+
 .social__item {
   list-style-type: none;
+}
+
+.social__item--vk {
+  width: 23px;
+  height: 13px;
+  margin-right: 36px;
+}
+
+.social__item--instagram {
+  width: 16px;
+  height: 16px;
+  margin-right: 33px;
+}
+
+.social__item--facebook {
+  width: 13px;
+  height: 20px;
+}
+
+.social__link {
+  display: block;
+  fill: #666666;
+}
+
+.social__link--vk {
+  width: 23px;
+  height: 13px;
+}
+
+.social__link--instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.social__link--facebook {
+  width: 13px;
+  height: 20px;
 }

@@ -39,7 +39,7 @@
       <h2 class="visually-hidden">Список продукции</h2>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-1.png" width="68" height="86" alt="">
+        <img class="card__img card__img--small" src="img/catalog/product-mobile-1.png" width="68" height="86" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -58,7 +58,7 @@
       </article>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-2.png" width="84" height="101" alt="">
+        <img class="card__img card__img--big" src="img/catalog/product-mobile-2.png" width="84" height="101" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -77,7 +77,7 @@
       </article>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-3.png" width="68" height="78" alt="">
+        <img class="card__img card__img--small" src="img/catalog/product-mobile-3.png" width="68" height="78" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -96,7 +96,7 @@
       </article>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-2.png" width="84" height="101" alt="">
+        <img class="card__img card__img--big" src="img/catalog/product-mobile-2.png" width="84" height="101" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -115,7 +115,7 @@
       </article>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-5.png" width="68" height="78" alt="">
+        <img class="card__img card__img--small" src="img/catalog/product-mobile-5.png" width="68" height="78" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -134,7 +134,7 @@
       </article>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-2.png" width="84" height="100" alt="">
+        <img class="card__img card__img--big" src="img/catalog/product-mobile-2.png" width="84" height="100" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -153,7 +153,7 @@
       </article>
 
       <article class="catalog-list__item card">
-        <img class="card__img" src="img/catalog/product-mobile-7.png" width="72" height="84" alt="">
+        <img class="card__img card__img--small" src="img/catalog/product-mobile-7.png" width="72" height="84" alt="">
 
         <a class="card__link" href="#">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -237,24 +237,27 @@
 
       <div class="catalog-additional__promo present">
         <h3 class="visually-hidden">Специальное предложение</h3>
-        <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="present__text">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
       </div>
     </section>
 
     <footer class="page-main__footer address address--inner">
       <h2 class="visually-hidden">Где нас найти?</h2>
 
-      <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="address__geo">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="address__content">
+        <p class="address__title">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="address__geo">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+      </div>
 
       <img class="address__image" src="img/map.png" width="320" height="362" alt="Наше местоположение на карте">
     </footer>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img src="img/icons/logo-text.svg" width="128" height="24" alt="Cat Energy">
-    </a>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+      <img class="page-footer__logo-text" src="img/icons/logo-text.svg" width="128" height="24" alt="Cat Energy">
+      </a>
 
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -274,11 +277,12 @@
         </li>
       </ul>
 
-    <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="visually-hidden">Разработано в</span>HTML Academy
 
       <img class="copyright__logo" src="img/icons/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-    </a>
+      </a>
+    </div>
   </footer>
 </body>
 </html>
