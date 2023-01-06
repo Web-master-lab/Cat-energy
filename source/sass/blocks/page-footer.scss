@@ -15,47 +15,56 @@
   padding: 39px 20px 22px;
   flex-direction: column;
 
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 95px;
+      left: 20px;
+      right: 20px;
+
+      height: 1px;
+
+      background-color: #d9d9d9;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 158px;
+      left: 20px;
+      right: 20px;
+
+      height: 1px;
+
+      background-color: #d9d9d9;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
-    width: $tablet-width;
-    justify-content: space-between;
     padding: 58px 30px 55px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding: 58px 110px;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 95px;
-    left: 20px;
-    right: 20px;
-
-    height: 1px;
-
-    background-color: #d9d9d9;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 158px;
-    left: 20px;
-    right: 20px;
-
-    height: 1px;
-
-    background-color: #d9d9d9;
-  }
 }
 
 .page-footer__logo {
   display: block;
+  height: 24px;
   margin: 0 auto;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .page-footer__logo-text {

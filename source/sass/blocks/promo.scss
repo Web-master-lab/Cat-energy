@@ -12,7 +12,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: -113px;
+
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-bottom: -113px;
+
     background-image: url("../../img/promo-background-desktop.png");
+    background-position: 100% 50%;
   }
 }
 
@@ -45,7 +52,8 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 30px 110px 200px;
+    height: 694px;
+    padding: 145px 110px 60px;
   }
 }
 

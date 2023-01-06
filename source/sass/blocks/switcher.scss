@@ -10,6 +10,10 @@
   padding: 0;
   padding-right: 122px;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 476px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -22,6 +26,17 @@
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
     border-radius: 6px;
+
+    @media (min-width: $tablet-width) {
+      left: calc(50% - 213px);
+      top: calc(50% - 3px);
+
+      width: 426px;
+      height: 6px;
+
+      background-color: #dcdcdc;
+      border: none;
+    }
   }
 
   &::after {
@@ -35,9 +50,36 @@
 
     background-color: #68b738;
     border-radius: 6px;
+
+    @media (min-width: $tablet-width) {
+      left: calc(50% - 4px);
+      top: calc(50% - 4px);
+      z-index: 2;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+    }
   }
 }
 
 .switcher__after {
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 17px);
+      top: calc(50% - 17px);
+
+      width: 34px;
+      height: 34px;
+
+      background-color: #ffffff;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+  }
 }
