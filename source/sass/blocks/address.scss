@@ -1,8 +1,12 @@
 .address {
+  position: relative;
+
   width: 100%;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    height: 400px;
     padding: 0 110px;
   }
 }
@@ -19,6 +23,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+
     width: 565px;
     padding: 56px 80px;
 

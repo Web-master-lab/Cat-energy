@@ -129,10 +129,6 @@
   @media (min-width: $tablet-width) {
     padding: 10px 16px;
   }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
 }
 
 .main-nav__link--active::before {
@@ -147,7 +143,15 @@
 
     background-color: #68b738;
   }
+}
 
+.main-nav__link--main {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.main-nav__link--main::before {
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
   }

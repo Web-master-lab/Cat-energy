@@ -92,8 +92,6 @@
 }
 
 .promo__slogan {
-  margin-left: 87px;
-
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
@@ -103,5 +101,9 @@
     line-height: 20px;
     color: #000000;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 87px;
   }
 }
