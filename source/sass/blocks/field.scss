@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: max-content auto;
   column-gap: 13px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     column-gap: 15px;
@@ -23,12 +24,18 @@
 }
 
 .field__input {
+  padding: 13px 15px;
+  margin: 0;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  border: 1px solid #e7e7e7;
 }
 
 .field__input--comment {
   width: 100%;
+  padding: 9px 12px 13px 15px;
 }

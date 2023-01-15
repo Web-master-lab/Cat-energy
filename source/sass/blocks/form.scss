@@ -2,17 +2,25 @@
   @media (min-width: $tablet-width) {
     padding: 0 70px 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 82px;
+  }
 }
 
 .form__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
+    margin-bottom: 69px;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
 }
 
 .form__additional {
+  margin: 0;
+  margin-bottom: 32px;
+
   font-family: $additional-font;
   line-height: 16px;
   text-align: center;
@@ -24,6 +32,7 @@
 
 .form__button {
   width: 100%;
+  margin-bottom: 21px;
   padding: 10px 0;
 
   font-size: 16px;
@@ -32,6 +41,10 @@
   @media (min-width: $tablet-width) {
     width: 282px;
     margin-right: 61px;
+    padding: 14px 0;
+
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {

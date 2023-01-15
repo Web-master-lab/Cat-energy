@@ -38,7 +38,7 @@
 
   <main class="page-main">
     <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
-    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="page-main__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
 
     <section class="page-main__section form">
       <h2 class="visually-hidden">Форма анкеты</h2>
@@ -51,19 +51,19 @@
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__label">Имя:*</span>
-                  <input class="field__input" type="text" name="cat-name" required>
+                  <input class="field__input" type="text" name="cat-name" placeholder="Барсик" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__label">Вес (кг):*</span>
-                  <input class="field__input" type="text" name="cat-weight" required>
+                  <input class="field__input" type="text" name="cat-weight" placeholder="7" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__label">Возраст (лет):</span>
-                  <input class="field__input" type="text" name="cat-age">
+                  <input class="field__input" type="text" name="cat-age" placeholder="7">
                 </label>
               </li>
             </ul>
@@ -75,22 +75,22 @@
             <ul class="field-group__list">
               <li class="field-group__item field-group__item--radio">
                 <label class="control control--radio">
-                  <input class="visually-hidden" type="radio" name="target" value="lose-weight" checked>
-                  <span class="control__input"></span>
+                  <input class="visually-hidden control__input" type="radio" name="target" value="lose-weight" checked>
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label">Похудение</span>
                 </label>
               </li>
               <li class="field-group__item field-group__item--radio">
                 <label class="control control--radio">
-                  <input class="visually-hidden" type="radio" name="target" value="gain-weight">
-                  <span class="control__input"></span>
+                  <input class="visually-hidden control__input" type="radio" name="target" value="gain-weight">
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label">Набор массы</span>
                 </label>
               </li>
               <li class="field-group__item field-group__item--radio">
                 <label class="control control--radio">
-                  <input class="visually-hidden" type="radio" name="target" value="advice">
-                  <span class="control__input"></span>
+                  <input class="visually-hidden control__input" type="radio" name="target" value="advice">
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
@@ -100,7 +100,7 @@
         <fieldset class="form__group field-group field-group--contacts">
           <legend class="field-group__title">Контактные данные (владельца кота)</legend>
 
-          <ul class="field-group__list field-group__list--contacts">
+          <ul class="field-group__list field-group__list">
             <li class="field-group__item">
               <label class="field">
                 <span class="field__label">E-mail:*</span>
@@ -120,39 +120,39 @@
           <label class="field-group__title" for="comment">Комментарий</label>
 
           <div class="field field--comment">
-            <textarea class="field__input field__input--comment" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="field__input field__input--comment" name="comment" id="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
 
         <fieldset class="form__group field-group field-group--additional">
           <legend class="field-group__title">Дополнительно</legend>
 
-          <ul class="field-group__list field-group__list--additional">
+          <ul class="field-group__list">
             <li class="field-group__item field-group__item--checkbox">
               <label class="control control--checkbox">
-                <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
-                <span class="control__input"></span>
+                <input class="visually-hidden control__input" type="checkbox" name="additional" value="sweetener" checked>
+                <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="field-group__item field-group__item--checkbox">
               <label class="control control--checkbox">
-                <input class="visually-hidden" type="checkbox" name="additional" value="water">
-                <span class="control__input"></span>
+                <input class="visually-hidden control__input" type="checkbox" name="additional" value="water">
+                <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">Питьевая вода</span>
               </label>
             </li>
             <li class="field-group__item field-group__item--checkbox">
               <label class="control control--checkbox">
-                <input class="visually-hidden" type="checkbox" name="additional" value="milk">
-                <span class="control__input"></span>
+                <input class="visually-hidden control__input" type="checkbox" name="additional" value="milk">
+                <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">Молоко</span>
               </label>
             </li>
             <li class="field-group__item field-group__item--checkbox">
               <label class="control control--checkbox">
-                <input class="visually-hidden" type="checkbox" name="additional" value="milk">
-                <span class="control__input"></span>
+                <input class="visually-hidden control__input" type="checkbox" name="additional" value="milk">
+                <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__label">Витамины</span>
               </label>
             </li>
@@ -177,7 +177,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper page-footer__wrapper--form">
       <a class="page-footer__logo">
       <img class="page-footer__logo-text" src="img/icons/logo-text.svg" width="128" height="24" alt="Cat Energy">
       </a>

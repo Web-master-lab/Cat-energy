@@ -43,6 +43,13 @@
   }
 }
 
+.page-footer__wrapper--form {
+  @media (min-width: $tablet-width) {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
 .page-footer__logo {
   display: block;
   margin: 0 auto;

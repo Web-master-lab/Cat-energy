@@ -32,19 +32,14 @@
 }
 
 .page-main__title {
-  width: 320px;
-  padding: 0 20px;
-  margin-bottom: 0;
-  margin-top: 27px;
+  margin: 27px 0 0 20px;
 
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    margin: 65px 0 85px;
-    padding: 0 30px;
+    margin: 65px 0 85px 70px;
 
     font-size: 60px;
     line-height: 60px;
@@ -63,6 +58,7 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
+    margin-left: 30px;
     padding-bottom: 0;
 
     border-bottom: none;
@@ -71,23 +67,27 @@
 
 .page-main__title--form {
   margin-bottom: 37px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .page-main__text {
-  padding: 0 20px;
-  margin: 37px 0 39px;
+  margin: 37px 0 39px 20px;
 
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    margin: 54px auto 66px;
-    padding: 0 30px;
+    margin: 54px 0 66px 70px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    margin: 56px auto 66px;
+    margin: 0 auto 66px;
     padding: 0 110px;
   }
 }

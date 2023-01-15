@@ -5,3 +5,45 @@
 .control-checkbox {
   color: #000000;
 }
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 15px);
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.control__mark--radio {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark--radio::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 6.75px);
+  top: calc(50% - 6.75px);
+
+  width: 13.5px;
+  height: 13.5px;
+
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
+  content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 14.5px);
+
+    width: 29px;
+    height: 29px;
+
+    background-image: url("../../img/icons/checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
