@@ -1,9 +1,13 @@
 .catalog-list {
+  border-top: 1px solid #ebebeb;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 141px;
+
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {

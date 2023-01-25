@@ -7,7 +7,6 @@
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     height: 400px;
-    padding: 0 110px;
   }
 }
 
@@ -26,6 +25,7 @@
     position: absolute;
     left: 110px;
     top: 95px;
+    z-index: 10;
 
     width: 565px;
     padding: 56px 80px;
@@ -60,9 +60,13 @@
   }
 }
 
-.address__image {
-  display: block;
-  margin: 0 auto;
+.address__map {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .address--inner {

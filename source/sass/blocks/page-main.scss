@@ -46,8 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    margin: 74px auto 165px;
+    margin: 74px 0 165px;
     padding: 0 110px;
   }
 }
@@ -55,13 +54,18 @@
 .page-main__title--catalog {
   padding-bottom: 41px;
 
-  border-bottom: 1px solid #ebebeb;
-
   @media (min-width: $tablet-width) {
     margin-left: 30px;
+    margin-bottom: 163px;
     padding-bottom: 0;
 
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-bottom: 165px;
+    padding: 0;
   }
 }
 
