@@ -12,11 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -113px;
-
     width: $desktop-width;
     margin: 0 auto;
-    margin-bottom: -113px;
 
     background-image: url("../../img/promo-background-desktop.png");
     background-position: 100% 50%;
@@ -49,7 +46,7 @@
     position: relative;
 
     width: 100%;
-    padding: 62px 30px 526px;
+    padding: 65px 30px 526px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,7 +59,7 @@
 .promo__image {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 263px;
+    top: 266px;
     left: calc(50% - 354.5px);
     z-index: -3;
 
@@ -82,11 +79,11 @@
 
 .promo__button {
   display: block;
-  padding: 10px 0;
+  padding: 11px 0;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-left: 87px;
+    margin-left: 90px;
     padding: 17px 26px;
 
     font-size: 20px;
@@ -95,6 +92,14 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
   }
 }
 
@@ -132,7 +137,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-left: 87px;
+    margin-left: 89px;
     margin-bottom: 49px;
 
     font-size: 20px;

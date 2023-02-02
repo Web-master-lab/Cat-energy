@@ -1,8 +1,14 @@
+.control {
+  &:hover .control__mark {
+    border-color: #bababa;
+  }
+}
+
 .control--radio {
   color: #222222;
 }
 
-.control-checkbox {
+.control--checkbox {
   color: #000000;
 }
 
@@ -21,6 +27,16 @@
   border-radius: 50%;
 }
 
+.control__input:disabled + .control__mark {
+  border-color: #bababa;
+
+  opacity: 0.3;
+}
+
+.control__input:disabled ~ .control__label {
+  opacity: 0.3;
+}
+
 .control__input[type="radio"]:checked + .control__mark--radio::before {
   content: "";
   position: absolute;
@@ -36,14 +52,14 @@
 
 .control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
   content: "";
-    position: absolute;
-    left: 0;
-    top: calc(50% - 14.5px);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 14.5px);
 
-    width: 29px;
-    height: 29px;
+  width: 29px;
+  height: 29px;
 
-    background-image: url("../../img/icons/checked.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../../img/icons/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

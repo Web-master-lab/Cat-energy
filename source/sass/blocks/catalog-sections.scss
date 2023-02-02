@@ -2,7 +2,7 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,7 +10,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     padding-top: 82px;
-    padding-bottom: 71px;
+    padding-bottom: 0;
   }
 }
 
@@ -21,17 +21,22 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
     padding: 77px 62px 52px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 71px;
     padding: 77px 52px 59px;
   }
 }
 
 .catalog-sections__card:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .catalog-sections__title {
@@ -39,7 +44,7 @@
 
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 69px;
+  padding-left: 71px;
 
   font-size: 24px;
   line-height: 37px;
@@ -47,7 +52,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
     padding-left: 0;
+    padding-right: 254px;
 
     font-size: 36px;
     line-height: 36px;
@@ -56,13 +63,14 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
     padding-left: 162px;
+    padding-right: 0;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: 2px;
+    top: -8px;
+    left: -7px;
 
     width: 67px;
     height: 53px;
@@ -157,7 +165,9 @@
   position: relative;
 
   display: block;
-  margin-top: 19px;
+  max-width: 200px;
+  margin-top: 18px;
+  padding-right: 75px;
 
   font-size: 16px;
   line-height: 16px;
@@ -172,22 +182,35 @@
     line-height: 30px;
   }
 
+  &:hover::after {
+    width: 32px;
+
+    background-image: url("../../img/icons/arrow-big.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: calc(50% - 6px);
+    left: 100px;
 
-    display: inline-block;
     width: 24px;
     height: 12px;
-    margin-left: 17px;
 
     background-image: url("../../img/icons/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      margin-left: 25px;
+      left: 133px;
     }
   }
+}
+
+.catalog-sections__link--pro::after {
+  left: 129px;
 }

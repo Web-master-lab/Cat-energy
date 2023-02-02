@@ -1,5 +1,6 @@
 .switcher {
   position: relative;
+  z-index: 10;
 
   display: flex;
   padding: 5px;
@@ -8,35 +9,41 @@
 
 .switcher__before {
   padding: 0;
-  padding-right: 122px;
+  margin-right: 122px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 476px;
+    position: relative;
+    left: 4px;
+
+    margin-right: 476px;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: calc(50% - 43px);
-    top: calc(50% - 7px);
+.switcher__after {
+  padding: 0;
+}
 
-    width: 86px;
-    height: 14px;
+.switcher__track {
+  position: absolute;
+  left: calc(50% - 43px);
+  top: calc(50% - 7px);
 
-    background-color: #ffffff;
-    border: 1px solid #cdcdcd;
-    border-radius: 6px;
+  width: 86px;
+  height: 14px;
 
-    @media (min-width: $tablet-width) {
-      left: calc(50% - 213px);
-      top: calc(50% - 3px);
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
 
-      width: 426px;
-      height: 6px;
+  @media (min-width: $tablet-width) {
+    left: calc(50% - 213px);
+    top: calc(50% - 3px);
 
-      background-color: #dcdcdc;
-      border: none;
-    }
+    width: 426px;
+    height: 6px;
+
+    background-color: #dcdcdc;
+    border: none;
   }
 
   &::after {
@@ -62,13 +69,9 @@
       border-radius: 50%;
     }
   }
-}
 
-.switcher__after {
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    &::before {
+  &::before {
+    @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       left: calc(50% - 17px);
@@ -80,6 +83,24 @@
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
       border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(#000000, 0.16);
     }
   }
+
+  &:hover::before {
+    box-shadow: 0 2px 4px rgba(#000000, 0.19);
+  }
+
+  &:active::before {
+    box-shadow: 0 3px 5px rgba(#000000, 0.2);
+    border-color: #68b738;
+  }
+}
+
+.switcher__track:hover ~ .switch-number {
+  border-bottom-style: solid;
+}
+
+.switcher__track:active ~ .switch-number {
+  border-bottom-color: transparent;
 }

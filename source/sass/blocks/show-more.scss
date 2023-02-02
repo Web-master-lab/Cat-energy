@@ -1,9 +1,10 @@
 .show-more {
   position: relative;
 
-  padding: 78px 20px 25px;
+  padding: 77px 20px 25px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
     padding: 161px 39px 39px;
 
     border: 2px solid #f2f2f2;
@@ -31,6 +32,14 @@
 
   &::after {
     transform: rotate(90deg);
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
   }
 }
 
@@ -77,6 +86,7 @@
 
 .show-more__button {
   display: block;
+  height: 40px;
   padding: 10px 0;
 
   font-size: 16px;
@@ -84,4 +94,12 @@
   color: #444444;
 
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(#444444, 0.3);
+  }
 }

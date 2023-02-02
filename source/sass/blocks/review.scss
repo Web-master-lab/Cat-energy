@@ -8,7 +8,6 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    z-index: -2;
 
     background-color: #ffffff;
     padding-top: 43px;
@@ -21,7 +20,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: -1;
+      z-index: 1;
 
       background-color: #eaeaea;
     }
@@ -40,17 +39,32 @@
       background-color: #f2f2f2;
     }
   }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: initial;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .review__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
     grid-template-columns: auto auto;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 3;
+
+    height: 317px;
     margin-bottom: 0;
     grid-column: 1/2;
     grid-row: 2/4;
@@ -67,6 +81,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 146px;
+    margin-top: -1px;
   }
 }
 
@@ -90,7 +105,7 @@
 .review__list {
   display: grid;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   grid-template-columns: 124px 124px;
   column-gap: 32px;
   justify-content: center;
@@ -103,7 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 42px;
     grid-column: 1/-1;
   }
 }
@@ -167,6 +182,8 @@
 
   @media (min-width: $tablet-width) {
     height: 72px;
+    padding-top: 14px;
+    align-items: initial;
 
     font-size: 30px;
     line-height: 37px;
@@ -183,7 +200,8 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
-    margin-bottom: 0;
+    margin-bottom: 14px;
+    margin-right: 1px;
     justify-self: end;
 
     font-size: 20px;
@@ -193,20 +211,53 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+
     text-align: start;
-    justify-self: auto;
   }
 }
 
 .review__images {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 4;
+
+    display: flex;
+    margin-bottom: 19px;
+    justify-content: center;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: -43px;
     grid-row: 1/3;
     grid-column: 2/3;
+  }
+}
+
+.review__image {
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    height: 511px;
+  }
+}
+
+.review__image--after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
 .review__switcher {
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
+  }
+}
+
+.review__br {
+  @media (min-width: $desktop-width) {
+    margin-right: 59px;
   }
 }

@@ -1,6 +1,6 @@
 .copyright {
   display: flex;
-  padding-top: 22px;
+  padding-top: 23px;
   align-items: center;
   justify-content: space-between;
 
@@ -11,15 +11,27 @@
 
   border-top: 1px solid #d9d9d9;
 
+  fill: #666666;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     padding: 0;
+    margin-bottom: 7px;
 
     border-top: none;
   }
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__logo {
-  margin-left: 22px;
+.copyright__text {
+  max-width: 80%;
+  margin-right: 22px;
 }

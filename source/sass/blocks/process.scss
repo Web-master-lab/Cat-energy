@@ -1,8 +1,12 @@
 .process {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 104px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 127px;
   }
 }
 
@@ -13,14 +17,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 134px 180px;
+    gap: 134px 60px;
 
     counter-reset: process;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0 109px;
+    gap: 0 80px;
   }
 }
 
@@ -64,7 +68,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding-left: 0;
-    padding-top: 110px;
+    padding-top: 111px;
   }
 
   &::before {
@@ -88,7 +92,7 @@
       content: counter(process);
       position: absolute;
       top: 0;
-      right: 18px;
+      right: 78px;
 
       font-family: $main-font;
       font-size: 280px;
@@ -99,7 +103,15 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: -18px;
+      right: -2px;
+    }
+  }
+
+  &:first-child::after {
+    right: 94px;
+
+    @media (min-width: $desktop-width) {
+      right: 16px;
     }
   }
 }

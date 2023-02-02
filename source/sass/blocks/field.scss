@@ -32,10 +32,70 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  border: none;
+
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 .field__input--comment {
   width: 100%;
   padding: 9px 12px 13px 15px;
+}
+
+.field__input[type="email"] {
+  padding-right: 45px;
+
+  &:focus + .field__icon {
+    stroke: #68b738;
+  }
+}
+
+.field__input[type="tel"] {
+  padding-right: 45px;
+
+  &:focus + .field__icon {
+    fill: #68b738;
+  }
+}
+
+.field__icon {
+  position: absolute;
+}
+
+.field__icon--email {
+  right: 16px;
+
+  stroke: #222222;
+  fill: transparent;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
+}
+
+.field__icon--phone {
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
+}
+
+.field__input--error {
+  outline: 2px solid #ff8282;
+}
+
+.field__input--error[type="email"] + .field__icon {
+  stroke: #ff8282;
+}
+
+.field__input--error[type="tel"] + .field__icon {
+  fill: #ff8282;
 }

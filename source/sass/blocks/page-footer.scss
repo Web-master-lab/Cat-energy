@@ -31,7 +31,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 58px 30px 55px;
+    padding: 55px 30px 55px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 58px 110px;
+    padding: 52px 110px;
   }
 }
 
@@ -58,6 +58,14 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

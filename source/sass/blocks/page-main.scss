@@ -46,8 +46,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    left: calc(50% - 610px);
+
     margin: 74px 0 165px;
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
@@ -63,9 +66,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
+    margin-left: 0;
     margin-bottom: 165px;
-    padding: 0;
   }
 }
 

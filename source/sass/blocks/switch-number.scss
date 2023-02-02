@@ -10,5 +10,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    border-bottom: 1px dotted rgba(#000000, 0.24);
+  }
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
   }
 }
