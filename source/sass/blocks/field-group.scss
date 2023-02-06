@@ -11,11 +11,17 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 72px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+  }
+
+  .field-group__item {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -40,13 +46,13 @@
     }
 
     &::after {
-      bottom: 26px;
+      bottom: 27px;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
-    padding: 25px 28px;
+    padding: 29px 28px;
 
     border: 1px solid #e7e7e7;
   }
@@ -59,8 +65,47 @@
 .field-group--contacts {
   padding-bottom: 24px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 67px;
+    padding-bottom: 68px;
+  }
+
+  .field-group__title {
+    max-width: 280px;
+
+    @media (min-width: $tablet-width) {
+      max-width: none;
+    }
+
+    &::before {
+      left: 201px;
+
+      @media (min-width: $tablet-width) {
+        left: 554px;
+      }
+    }
+  }
+
+  .field-group__list {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 78px;
+      row-gap: 15px;
+    }
+  }
+
+  .field-group__item {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -83,7 +128,7 @@
     content: "";
     position: absolute;
     right: -20px;
-    top: 13px;
+    top: 15px;
 
     height: 2px;
 
@@ -121,42 +166,64 @@
   }
 }
 
-.field-group--contacts .field-group__title {
-  max-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    max-width: none;
-  }
-
-  &::before {
-    left: 201px;
+.field-group--comments {
+  .field-group__title {
+    margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
-      left: 554px;
+      margin-bottom: 77px;
+    }
+
+    &::before {
+      left: 142px;
+
+      @media (min-width: $tablet-width) {
+        left: 218px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 222px;
+      }
     }
   }
 }
 
-.field-group--comments .field-group__title {
-  &::before {
-    left: 142px;
+.field-group--additional {
+  .field-group__title {
+    margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
-      left: 222px;
+      margin-bottom: 62px;
+    }
+
+    &::before {
+      left: 163px;
+
+      @media (min-width: $tablet-width) {
+        left: 251px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -97px;
+      }
     }
   }
-}
 
-.field-group--additional .field-group__title {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 62px;
-  }
-
-  &::before {
-    left: 163px;
+  .field-group__list {
+    margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
-      left: 251px;
+      display: grid;
+      margin-bottom: 59px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+      row-gap: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 66px;
+      grid-template-columns: repeat(4, 260px);
+      column-gap: 65px;
     }
   }
 }
@@ -168,35 +235,10 @@
   text-transform: uppercase;
 }
 
-.field-group--contacts .field-group__list {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 78px;
-    row-gap: 15px;
-  }
-}
-
-.field-group--additional .field-group__list {
-  margin-bottom: 41px;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 260px);
-    column-gap: 64px;
-  }
-}
-
 .field-group__item {
   position: relative;
 
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   list-style-type: none;
 
@@ -205,23 +247,25 @@
   }
 }
 
-.field-group--contacts .field-group__item {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
 .field-group__item--radio {
   margin-bottom: 25px;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding-left: 60px;
+  }
 }
 
 .field-group__item--checkbox {
   margin-bottom: 25px;
   padding-left: 45px;
 
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-left: 59px;
   }
 }
 

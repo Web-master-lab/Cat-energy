@@ -1,12 +1,14 @@
 .card-row {
-  padding: 11px 0 19px;
+  margin-bottom: 5px;
+  padding: 13px 0;
 
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
 
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    margin-bottom: 0;
     padding: 25px 37px 28px;
     grid-template-columns: 1fr 1fr;
     row-gap: 23px;
@@ -42,10 +44,17 @@
       }
     }
   }
-}
 
-.card-row:first-of-type {
-  border-top: 1px solid #cdcdcd;
+  &:last-of-type {
+    padding-bottom: 17px;
+    margin-bottom: 0;
+
+    border-bottom: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 28px;
+    }
+  }
 }
 
 .card-row__list {

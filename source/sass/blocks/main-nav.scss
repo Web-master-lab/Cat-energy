@@ -57,7 +57,7 @@
 
 .main-nav__wrapper {
   display: flex;
-  padding: 10px 20px 16px;
+  padding: 9px 20px 17px;
   justify-content: space-between;
   align-items: center;
 
@@ -217,7 +217,7 @@
 
 .main-nav__logo--text {
   height: 19px;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-right: 11px;
 
   @media (min-width: $tablet-width) {
@@ -247,6 +247,7 @@
   display: block;
   width: 24px;
   height: 19px;
+  margin-top: 2px;
   padding: 0;
 
   background-color: transparent;

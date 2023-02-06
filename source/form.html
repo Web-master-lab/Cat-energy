@@ -22,7 +22,10 @@
           </picture>
         </a>
         <a class="main-nav__logo main-nav__logo--text" href="index.html">
-          <img src="img/icons/logo-text-header.svg" width="101" height="19" alt="">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/icons/logo-text-desktop.svg">
+            <img class="main-nav__cat-text" src="img/icons/logo-text-header.svg" width="101" height="19" alt="">
+          </picture>
         </a>
 
         <button class="main-nav__toggle" type="button">
@@ -134,7 +137,7 @@
           <label class="field-group__title" for="comment">Комментарий</label>
 
           <div class="field field--comment">
-            <textarea class="field__input field__input--comment" name="comment" id="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="field__input field__input--comment" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
 

@@ -1,12 +1,24 @@
 .process {
-  padding-bottom: 55px;
+  padding-bottom: 53px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 104px;
+    padding-bottom: 103px;
+
+    border-bottom: 1px solid #e6e6e6;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 127px;
+
+    border-bottom: none;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
   }
 }
 
@@ -57,7 +69,8 @@
 
   min-height: 54px;
   padding-left: 80px;
-  margin-bottom: 26px;
+  padding-top: 2px;
+  margin-bottom: 24px;
 
   font-family: $additional-font;
   color: #444444;

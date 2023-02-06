@@ -2,10 +2,20 @@
   &:hover .control__mark {
     border-color: #bababa;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .control--radio {
   color: #222222;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .control--checkbox {
@@ -21,6 +31,13 @@
   height: 30px;
 
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - 20px);
+
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__mark--radio {
@@ -48,6 +65,14 @@
 
   background-color: #68b738;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
@@ -62,4 +87,13 @@
   background-image: url("../../img/icons/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - 19.5px);
+
+    width: 39px;
+    height: 39px;
+
+    background-image: url("../../img/icons/checked-big.svg");
+  }
 }

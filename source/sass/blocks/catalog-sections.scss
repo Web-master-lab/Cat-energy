@@ -212,5 +212,7 @@
 }
 
 .catalog-sections__link--pro::after {
-  left: 129px;
+  @media (min-width: $tablet-width) {
+    left: 129px;
+  }
 }
